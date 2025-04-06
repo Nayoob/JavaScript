@@ -1,0 +1,3 @@
+
+// mark.calcBMI();
+// john.calcBMI();

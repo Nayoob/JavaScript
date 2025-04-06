@@ -1,4 +1,4 @@
-
+'Use-strict'
 //  javascript ?  = > javascript is a high level object oreinted programming language ;
 //  {you might be wondering why specifically javascript ?}
 //  so let me ask you a Question what you want to build ?
@@ -42,3 +42,38 @@ let _function = " jhonas";  // this is not allowed to write
 let $new = 2002 ;
 
 // but when we add  the dollor sign and the the _ ; its okay then ;
+/* Write your code below. Good luck! 🙂 */
+
+const mark = {
+    fullName : 'Mark Miller',
+    mass : 78,
+    height : 1.69,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height) ;
+        return this.bmi ;
+    }
+}
+
+const john = {
+    fullName : 'John Smith',
+    mass : 92,
+    height : 1.95,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height) ;
+        return this.bmi ;
+    }
+}
+
+// mark.calcBMI();
+// john.calcBMI();
+
+if(john.calcBMI() > mark.calcBMI() ){
+    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)
+}else if(mark.calcBMI() > john.calcBMI()){
+    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`)
+}else{
+     console.log(`Both have the same BMI (${mark.calcBMI()})`);
+}
+
+console.log(mark)
+console.log(john)
