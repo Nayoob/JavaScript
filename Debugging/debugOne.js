@@ -21,6 +21,7 @@ const Min = function(array){
    }
    return min ;
 }
+
 const Max = function(array){
    let max = array[0];
    for (let index = 0; index < array.length; index++) {
@@ -37,8 +38,6 @@ const calcAmplitude = function(arrOftemp){
 }
 
 console.log(calcAmplitude(arrOftemp))
-
-
 
 // Coding Challenge #2 With AI
 

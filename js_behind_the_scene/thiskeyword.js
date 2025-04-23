@@ -79,7 +79,6 @@ const obj4 = {
   }
 };
 obj4.greet();
-
 // 8️⃣ EVENT HANDLER with regular function (in browser)
 document.body.addEventListener("click", function () {
   console.log("Clicked (regular function):", this); 
