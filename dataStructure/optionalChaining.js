@@ -91,3 +91,9 @@ const user = [
 const userOne = [];
 console.log(user[0]?.name ?? "Array is empty ");
 console.log(userOne[0]?.name ?? "Array is empty dude the userOne array ")
+
+
+
+
+
+

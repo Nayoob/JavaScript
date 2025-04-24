@@ -1,1 +1,1 @@
-restaurant.openingHours[day]?.open
+console.log(Object.entries(game.odds))
