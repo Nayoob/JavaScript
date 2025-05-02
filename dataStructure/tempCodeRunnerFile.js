@@ -1,1 +1,2 @@
-console.log(Object.entries(game.odds))
+
+console.log(hamza) // jaBbar
