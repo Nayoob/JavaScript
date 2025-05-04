@@ -13,7 +13,6 @@
 // console.log(roll_number)
 
 
-
 // var name = "Muhammad sufyan"
 
 // var name = "ishaq"  

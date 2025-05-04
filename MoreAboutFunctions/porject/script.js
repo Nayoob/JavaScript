@@ -57,7 +57,19 @@ const poll = {
       }
     // typeof inputFromUser === 'number' && inputFromUser < this.answers.length && 
     // this.answers[inputFromUser]++;
+
     console.log(this.answers)
+    this.displayResults('string')
+    },
+
+    // display function 
+    displayResults(type = 'array') {
+        if (type === 'array') {
+          console.log(this.answers);
+        } else if (type === 'string') {
+          // Poll results are 13, 2, 4, 1
+          console.log(`Poll results are ${this.answers.join(', ')}`);
+        }
     }
   };
 //   poll.registerNewAnswer();
@@ -68,5 +80,5 @@ const poll = {
 
 const button = document.querySelector('.button');
 button.addEventListener('click' , poll.registerNewAnswer.bind(poll))
-console.log(poll.answers)
+
 

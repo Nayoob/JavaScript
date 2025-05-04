@@ -13,7 +13,7 @@
     Explicit Conversion (Type Casting) 
     Done manually using functions like Number(), String(), Boolean(), etc. */ 
 
-    console.log("5" + 3); // "53" (Number is converted to string)
+    console.log("5" + true); // "53" (Number is converted to string)
     console.log("5" - 3); // 2 (String is converted to number)
     console.log(5 + true); // 6 (true is converted to 1)
     console.log("10" * "2"); // 20 (Both strings are converted to numbers)

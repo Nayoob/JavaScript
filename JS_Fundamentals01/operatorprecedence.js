@@ -29,9 +29,33 @@ console.log(num++); // 5
 console.log(num);   // 6
 console.log(++num); // 7
 
+
+let oneo = 20;
+let twoo = 30 ;
+console.log(oneo++ + twoo++);
+console.log(one , two )
+console.log("Try programiz.pro");
+
+// console.log(one++ + two++);
+// console.log(one , two )
+
+const sum = function(numOne , numTwo){
+    console.log(numOne , numTwo)
+    console.log(numOne + numTwo)
+    console.log("Inside function stuff!")
+}
+let one = 20;
+let two = 30 ;
+sum(one++ , two++);
+console.log(one , two )
+/* story behind post fix and prefix incremetn operator in case of prefix operator  the prefgix 
+operator will do its operation on number first then the number will be pased some where else 
+while in post fix first the number which has the post fix operator it wont work right away first the 
+number will do the operation then the number will be subtracted or add   */
+
 // Example 5: Ternary Operator with Nested Conditions
 let age = 20;
-let message = age >= 18 ? (age > 21 ? "Adult" : "Young Adult") : "Minor";
+let message = age >= 18 ? (age > 21 ? "Adult" : "Young Adult") : "child";
 console.log(message); // "Young Adult"
 
 // Example 6: Logical NOT and Comparison
