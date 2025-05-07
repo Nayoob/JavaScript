@@ -98,4 +98,3 @@ function Person(name) {
 }
 const person1 = new Person("Sufyan");
 // ✅ `this` = new object created by `new`
-

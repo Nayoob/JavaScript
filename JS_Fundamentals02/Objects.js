@@ -51,7 +51,7 @@ console.log(`${obj.FirstName} has ${obj.friends.length} friends, One of them is 
 const objOne = {
     FirstName : 'Sufan',
     LastName : 'Khan',
-    birthPlace : 'United States of America imagionary 🤣',
+    birthPlace : 'United States of America Imagination 🤣',
     birthyear : 2002 ,
     Address : 'Quetta',
     ismarried : false ,

@@ -28,7 +28,6 @@ expressions and arrow functions (if stored in var, let, or const) behave like va
 
 
 
-
  // ✅ var is hoisted (undefined)
 console.log(a); // undefined
 var a = 10;
