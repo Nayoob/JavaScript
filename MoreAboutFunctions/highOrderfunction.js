@@ -9,7 +9,7 @@
 
 // Example: Functions as variables
 const greet = function(name) {
-    return "Hello, " + name;
+    return `hello , ${name}`;
 };
 console.log(greet("Alice")); // Output: "Hello, Alice"
 
@@ -84,7 +84,7 @@ const createGreeter = function(greeting) {
 };
 
 const greetMorning = createGreeter("Good Morning");
-console.log(greetMorning("Alice"));  // Output: "Good Morning, Alice"
+console.log(greetMorning("Sufyan"));  // Output: "Good Morning, Alice"
 
 // Even though `createGreeter` is no longer on the stack, `greetMorning` still remembers the `greeting` ("Good Morning").
 // This is closure in action.
@@ -96,3 +96,24 @@ console.log(greetMorning("Alice"));  // Output: "Good Morning, Alice"
     // - Higher-order functions are functions that either accept or return other functions. This is possible due to closures.
     // - Closures "remember" variables from their outer function's scope, even after the outer function finishes execution, making them crucial in JavaScript's functional programming capabilities.
 
+
+/* lets say we wan to make a greet Method */
+const GreetOne = function(greetMessage , name){
+    return `${greetMessage}, ${name}`
+}
+
+GreetOne('Good Morning' , 'Sufyan')
+
+/* with no nested function when ever we call func we have to pass both parameter to function 
+argument but with nested func we can pass Only Name */
+
+const GreetTwo = function(Greet){
+    return function(name){
+       return `${Greet}, ${name}`
+    }
+}
+
+const GreeHim = GreetTwo("Hello");
+GreeHim('Sufyan')
+GreeHim('Younas')
+GreeHim('jabbar')
